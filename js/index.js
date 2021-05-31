@@ -34,23 +34,6 @@ for (const { nombre, foto, profesion, estado, twitter, marcado } of senyores) {
   principal.append(senyorElemento);
 }
 
-/* const inicialSenyor = senyorElemento.querySelector(".inicial");
-  const palabraInicial1 = nombre.split(" ")[0];
-  const palabraInicial2 = nombre.split(" ")[1]; */
-
-/* if (palabraInicial.length[0] < 3){{
-  inicialSenyor.textContent = palabraInicial[1].chartAt(0);
-}
-  else{
-  inicialSenyor.textContent = palabraInicial[0].chartAt(0);
-  } */
-/*   const inicial = nombre => palabraInicial1
-  function getInicial(nombre) {
-  return nombre.split(" ")[0].length < 3
-    ? nombre.split(" ")[1].charAt(0)
-    : nombre.split(" ")[0].charAt(0);
-}
- */
 const cantidadSenyores = document.querySelector(".cantidad-senyores");
 let senyoresMarcados = 0;
 for (const senyor of senyores) {
