@@ -17,13 +17,12 @@ for (const { nombre, foto, profesion, estado, twitter, marcado } of senyores) {
   senyorEstado.textContent = estado;
   const senyorTwitter = senyorElemento.querySelector(".twitter-dato");
   senyorTwitter.textContent = twitter;
-
-  /*   const imagenFijada = senyorElemento.querySelector(".avatar img");
+  const imagenFijada = senyorElemento.querySelector(".avatar img");
   const iconoFijado = senyorElemento.querySelector(".icono");
   if (marcado) {
     imagenFijada.classList.add("imagen-fijada");
     iconoFijado.classList.add("icono-fijado");
-  } */
+  }
 
   principal.append(senyorElemento);
 }
