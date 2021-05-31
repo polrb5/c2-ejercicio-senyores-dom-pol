@@ -56,3 +56,9 @@ body {
 .senyor-molde {
   display: none;
 }
+.imagen-fijada {
+  transform: scaleX(-1);
+}
+.icono-fijado {
+  display: block;
+}

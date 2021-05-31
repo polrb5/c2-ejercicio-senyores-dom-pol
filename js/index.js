@@ -2,7 +2,7 @@ import { senyores } from "../datos/senyores.js";
 
 const principal = document.querySelector(".principal");
 
-for (const { nombre, foto, profesion, estado, twitter } of senyores) {
+for (const { nombre, foto, profesion, estado, twitter, marcado } of senyores) {
   const senyorElemento = document
     .querySelector(".senyor-molde")
     .cloneNode(true);
@@ -18,5 +18,21 @@ for (const { nombre, foto, profesion, estado, twitter } of senyores) {
   const senyorTwitter = senyorElemento.querySelector(".twitter-dato");
   senyorTwitter.textContent = twitter;
 
+  /*   const imagenFijada = senyorElemento.querySelector(".avatar img");
+  const iconoFijado = senyorElemento.querySelector(".icono");
+  if (marcado) {
+    imagenFijada.classList.add("imagen-fijada");
+    iconoFijado.classList.add("icono-fijado");
+  } */
+
   principal.append(senyorElemento);
 }
+
+const cantidadSenyores = document.querySelector(".cantidad-senyores");
+let senyoresMarcados = 0;
+for (const senyor of senyores) {
+  if (senyor.marcado) {
+    senyoresMarcados++;
+  }
+}
+cantidadSenyores.textContent = senyoresMarcados;
